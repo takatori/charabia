@@ -15,6 +15,7 @@ mod control_char;
 mod latin;
 mod lowercase;
 mod nonspacing_mark;
+mod compatibility_decompostion;
 
 /// List of [`Normalizer`]s used by [`Normalize::normalize`].
 pub static NORMALIZERS: Lazy<Vec<Box<dyn Normalizer>>> = Lazy::new(|| {
